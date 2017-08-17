@@ -1,0 +1,19 @@
+.footer
+    background-color $color-background-dark
+
+    &__container
+        display flex
+        align-items center
+        justify-content center
+        min-height 102px
+
+    &__copyright
+        font-size (11/16)em
+        font-weight 300
+        color white
+        text-align center
+    
+    // IE 10+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+        &__container
+            height 102px

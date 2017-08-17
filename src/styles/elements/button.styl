@@ -1,0 +1,27 @@
+.button
+    min-height em(40, 16)
+    padding 0 10px
+    margin 0
+    border none
+    border-radius 5px
+    background-color $color-red
+    color white
+    font-family 'Roboto', sans-serif
+    font-size 1rem
+    font-weight 700
+    text-transform uppercase
+    line-height em(40, 16)
+    cursor pointer
+    outline none
+    transition background-color 0.2s $easeOut
+
+    &:hover
+        background-color darken($color-red, 10%)
+
+    &._fullsize
+        width 100%
+
+    &__icon
+        display inline-block
+        margin-left 5px
+        margin-right -10px

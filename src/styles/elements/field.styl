@@ -1,0 +1,28 @@
+.field
+    position relative
+
+    &__input
+        &:focus
+            & + ^[0]__label
+                top auto
+                bottom 100%
+                transform translateY(-9px)
+                transition all 0.1s $easeOut
+                animation fadeOutIn 0.15s linear
+        &._filled
+            & + ^[0]__label
+                top auto
+                bottom 100%
+                transform translateY(-9px)
+                animation none
+
+    &__label
+        position absolute
+        top 0
+        left 10px
+        display inline-block
+        color $color-gray
+        font-size em(12)
+        line-height 1
+        transform translateY(em(13, 12))
+        pointer-events none

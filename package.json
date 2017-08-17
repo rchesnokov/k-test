@@ -1,0 +1,39 @@
+{
+  "name": "KodixEntryTest",
+  "version": "1.0.0",
+  "author": "Roman Chesnokov",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^0.28.0",
+    "css-mqpacker": "^5.0.1",
+    "extract-loader": "^0.1.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.1",
+    "html-loader": "^0.4.5",
+    "postcss-loader": "^1.3.3",
+    "riot-tag-loader": "^1.0.0",
+    "style-loader": "^0.16.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
+    "webpack": "^2.3.3",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production webpack -p",
+    "serve": "webpack --watch & webpack-dev-server --inline --hot"
+  },
+  "dependencies": {
+    "inputmask": "^3.3.5",
+    "jquery": "^3.2.1",
+    "promise-polyfill": "^6.0.2",
+    "reset-css": "^2.2.0",
+    "riot": "^3.4.1",
+    "riotcontrol": "^0.0.3",
+    "select2": "^4.0.3",
+    "whatwg-fetch": "^2.0.3"
+  }
+}

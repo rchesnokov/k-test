@@ -1,0 +1,57 @@
+select
+    width 100%
+
+.select2-container
+    width 100% !important
+
+.select2-container--default .select2-selection--single
+    outline none
+    border-width 1px 1px 2px 1px 
+    border-style solid 
+    border-color $color-gray-light
+    border-radius 0
+    transition border-color 0.2s $easeOut
+    &:hover
+       border-bottom-color $color-red 
+
+.select2-container--default.select2-container--open .select2-selection--single
+    border-bottom-color #000
+
+
+.select2-container .select2-selection--single
+    min-height em(40)
+
+.select2-container--default .select2-selection--single .select2-selection__rendered
+    padding-right 40px
+    font-size rem(12)
+    line-height em(36, 12)
+
+.select2-container--default .select2-selection--single .select2-selection__arrow
+    height em(40)
+
+.select2-selection__placeholder
+    color $color-gray
+
+.select2-dropdown
+    border-width 1px
+    border-style solid 
+    border-color $color-gray-light
+    border-radius 0
+
+.select2-results__options
+    font-size rem(12)
+    color $color-gray
+
+.select2-container--default .select2-results__option[aria-selected=true]
+    background-color white
+
+.select2-container--default .select2-results__option--highlighted[aria-selected]
+    background-color white
+    color black
+
+.select2-results__option
+    padding-top 8px
+    padding-bottom 8px
+
+.select2-container--default .select2-selection--single .select2-selection__arrow
+    right 10px

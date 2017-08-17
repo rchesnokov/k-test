@@ -1,0 +1,69 @@
+.color-picker
+    position relative
+
+    &__label
+        position absolute
+        bottom calc(100% + 2px)
+        left 0
+        display inline-block
+        color $color-gray
+        font-size em(12)
+        line-height 1
+    
+    &__list
+        position relative
+        z-index 1
+        display flex
+        align-items center
+        min-height em(40)
+
+    &__variant
+        margin-right 22px
+    
+    &__input
+        display none
+        &:checked + ^[0]__control
+            &:after
+                transform scale(1,1)
+            &._white
+                .color-marker
+                    border none
+    
+    &__control
+        position relative
+        display inline-block
+        cursor pointer
+        .color-marker
+            content ""
+            display block
+            vertical-align middle
+            height em(22)
+            width em(22)
+            border-radius 100%
+        &._white
+            .color-marker
+                border 1px solid $color-gray
+                border-radius 100%
+        
+        &:after
+           content ""
+           display block
+           z-index -1
+           position absolute
+           top em(-4)
+           left em(-4)
+           height em(30) 
+           width em(30)
+           background-color #c4092f
+           border-radius 100%
+           transform scale(0.6,0.6)
+           transition transform 0.1s $easeOut
+
+    // IE 10+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+        &__list
+            height em(40)
+
+
+
+

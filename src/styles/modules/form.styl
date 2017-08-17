@@ -1,0 +1,18 @@
+.form
+    &__row
+        display flex
+        margin 0 -10px
+    
+    &__field
+        flex: 1 0 0%
+        margin 0 10px 30px
+
+    @media phone
+        &__row
+            flex-wrap wrap
+        &__field
+            flex-basis calc(100% - 20px)
+            &._mobile_half
+                flex-basis calc(50% - 20px)
+            &._mobile_indent_small
+                margin-bottom 21px

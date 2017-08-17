@@ -1,0 +1,95 @@
+.listing
+    &__title
+        margin-bottom 27px
+        padding-left 10px
+        border-left 3px solid #8b9497
+        font-size 20px
+        font-weight 700
+        line-height 1
+        color #282d30
+        text-transform uppercase
+    
+    &__table
+        background-color $color-background-light
+        font-weight 300
+        table
+            width 100%
+        td
+            padding em(15) 15px
+        thead
+            td
+                padding em(13) 15px
+                font-weight 500
+                color white
+                background-color $color-red
+        &._desktop
+            table
+                overflow hidden
+                border-radius 5px 5px 0 0
+        &._mobile
+            display none
+            margin 0 -10px
+            table
+                table-layout fixed
+            td
+                padding em(6) 5px
+            tr
+                &:first-child td
+                    padding-top em(10)
+                &:last-child td
+                    padding-bottom em(10)
+    
+    &__item
+        padding 10px 15px
+        border-top 1px solid #e3e4e4
+    
+    &__size
+        &-title
+            width 100%
+
+
+    &__property
+        &._color
+            text-align center
+            .color-marker
+                margin-top -2px
+        &._additional
+            font-size em(13)
+            color #8b9497
+    
+    &__button
+        display inline-block
+        margin em(-8, 14) 0
+        padding em(8, 14) 15px
+        font-size em(14)
+        color #8b9497
+        text-decoration none
+        border-radius 14px
+        transition all 0.15s
+        cursor pointer
+        &:hover
+            background-color $color-balck-light
+            color white
+
+
+    @media phone
+        &__title
+            display none
+        
+        &__table
+            &._desktop
+                display none
+            &._mobile
+                display block
+
+        &__property
+            &._title
+                width 100%
+            &._color
+                width rem(30)
+            &._price
+                width rem(120)
+            
+        &__button
+            padding em(8) 10px
+            margin-right -10px
